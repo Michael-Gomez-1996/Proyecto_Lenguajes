@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tienda Demo - Proyecto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Tienda Demo</h1>
+    <div id="user-area">
+      <form id="login-form" class="login-form">
+        <input type="text" id="username" placeholder="usuario" required />
+        <input type="password" id="password" placeholder="password" required />
+        <button type="submit">Entrar</button>
+      </form>
+      <div id="user-info" class="hidden">
+        <span id="welcome"></span>
+        <button id="logout-btn">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="catalogo-productos" class="catalogo">
+      <!-- Aquí se cargarán las tarjetas de producto -->
+    </section>
+
+    <aside id="carrito" class="carrito">
+      <h2>Carrito</h2>
+      <div id="carrito-items"></div>
+      <div id="carrito-total" class="total">Total: $0.00</div>
+      <button id="vaciar-carrito">Vaciar carrito</button>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <small>Proyecto final - Curso de JavaScript / Fetch / Promesas</small>
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
